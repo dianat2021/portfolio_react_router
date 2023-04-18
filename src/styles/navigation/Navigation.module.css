@@ -24,7 +24,6 @@
   align-items: left;
   gap: 1.5rem;
   width: 100%;
-  /* padding: 0 1.2rem; */
 }
 
 .navLink {
@@ -45,7 +44,6 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  /* padding: 1.5rem 0; */
 }
 
 .main-nav__pages__burger {
@@ -60,8 +58,3 @@
 a .active {
   color: orange;
 }
-/* @media only screen and (max-width: 800px) {
-  .main-nav {
-    width: 7rem;
-  }
-} */

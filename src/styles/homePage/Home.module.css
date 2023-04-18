@@ -1,5 +1,6 @@
 /* IMPORTS -----------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 /* GLOBAL------------------------ */
 * {
   margin: 0;
@@ -8,12 +9,12 @@
 }
 /* CONTAINERS-------------------------------------------- */
 .grid-container {
-  width: 100vw;
-  min-width: 380px;
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(16, minmax(0, 1fr));
   grid-template-rows: repeat(16, minmax(0, 1fr));
+  width: 100vw;
+  min-width: 380px;
+  height: 100vh;
   background-color: #aec6cf;
   overflow: hidden;
 }
@@ -47,19 +48,23 @@
 }
 .introduction-contactButton {
   display: block;
+  width: 15rem;
+  height: 2.5rem;
   margin-top: 2rem;
-  width: 10rem;
-  height: 2rem;
-  background-color: transparent;
+  background-color: #f58750;
+  font: bold 1.1rem Oswald,sans-serif;
   cursor: pointer;
-  border: 2px solid black;
+  border: none;
+  transition: 0.5s;
 }
-.introduction-contactButton:hover {
-  border: 2px solid #4d5d53;
-  color: #4d5d53;
-  font-family: inherit;
+.introduction-contactButton:hover{
+  box-shadow: 0 0.5em 0.5em -0.4em black;
+  transform: translateY(-0.25rem);
 }
-
+.introduction-contactButton:active{
+  transform: scale(95%);
+}
+/* MEDIA QUESRIES--------------------------------------------- */
 @media only screen and (max-width: 900px) {
   .introduction-container h1 {
     font-size: 1.6rem;
@@ -70,8 +75,8 @@
     grid-column: 4/13;
   }
   .photo-container {
-    grid-row: 10/15;
     grid-column: 8/16;
+    grid-row: 10/15;
   }
   .introduction-text {
     margin-top: 1.5rem;
@@ -89,9 +94,10 @@
   }
   .Hamburger-menu-container {
     display: grid;
+    position: fixed;
     align-items: center;
-    grid-column: 1/13;
-    grid-row: 1/2;
+    width: 100%;
+    height: 5rem;
     background-color: #436b95;
     justify-content: left;
     padding: 0 0.5rem;
@@ -141,6 +147,9 @@
   }
 }
 
+@media only screen and (max-width: 520px) {
+
+}
 @media only screen and (max-width: 520px) {
   .photo-container {
     transform: rotateZ(20deg);

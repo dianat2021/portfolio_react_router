@@ -9,22 +9,31 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import Button from "../components/Button";
 const Contact = ({ burgerMenuStatus, burgerMenuHandler }) => {
-  console.log(burgerMenuStatus)
+  console.log(burgerMenuStatus);
   return (
     <Fragment>
-
       <div className={styles["grid-container"]}>
-      <nav className={burgerMenuStatus ? styles["main-nav__container__active"] :styles["main-nav__container"]}>
-          <Navigation burgerMenuStatus={burgerMenuStatus}/>
+        <nav
+          className={
+            burgerMenuStatus
+              ? styles["main-nav__container__active"]
+              : styles["main-nav__container"]
+          }
+        >
+          <Navigation burgerMenuStatus={burgerMenuStatus} />
         </nav>
-        
-      <div className={styles["Hamburger-menu-container"]}>
+
+        <div className={styles["Hamburger-menu-container"]}>
           <button onClick={burgerMenuHandler}>
-            {burgerMenuStatus ? <AiOutlineClose color="black" size={"2.5rem"}/> :<GiHamburgerMenu color="black" size={"2.5rem"} /> }  
+            {burgerMenuStatus ? (
+              <AiOutlineClose color="black" size={"2.5rem"} />
+            ) : (
+              <GiHamburgerMenu color="black" size={"2.5rem"} />
+            )}
           </button>
         </div>
-
 
         <div className={styles["contact-title-container"]}>
           <h1>CONTACT</h1>
@@ -51,7 +60,7 @@ const Contact = ({ burgerMenuStatus, burgerMenuHandler }) => {
               placeholder="Max 200 characters"
               required
             />
-            <button>Send</button>
+            <Button value="Send" className={styles["send-button"]} />
           </form>
         </div>
         <div className={styles["contact-details-container"]}>
@@ -87,7 +96,6 @@ const Contact = ({ burgerMenuStatus, burgerMenuHandler }) => {
             </a>
           </div>
         </div>
-
       </div>
     </Fragment>
   );

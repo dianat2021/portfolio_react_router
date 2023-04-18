@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import styles from "../styles/homePage/Home.module.css";
 import Navigation from "../components/Navigation";
+import Button from "../components/Button";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 const Home = ({burgerMenuStatus ,burgerMenuHandler}) => {
@@ -28,9 +29,7 @@ console.log(burgerMenuStatus)
             mollitia quam et similique cupiditate distinctio labore repudiandae
             porro eum qui ad molestiae, accusamus reprehenderit fugiat?
           </p>
-          <button className={styles["introduction-contactButton"]}>
-            Contact
-          </button>
+            <Button value='Contact' className={styles['introduction-contactButton']}/>
         </div>
         <div className={styles["photo-container"]}></div>
       </div>
