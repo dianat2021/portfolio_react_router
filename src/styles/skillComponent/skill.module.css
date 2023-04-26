@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.skill-container{
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    margin-bottom: 10px;
+}
+.skill-description{
+    flex-basis: 70%;
+    background-color: blueviolet;
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.skill-logo-container{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: crimson;
+}
+.skill-logo{
+    width: 50%;
+    height: 75%;
+    min-width: 110px;
+    min-height: 150px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,11 +1,17 @@
 import React from "react";
-import Navigation from "../components/Navigation";
+//STYLES
+import sharedStyles from "../styles/sharedCSS/sharedcss.module.css";
 import styles from "../styles/about/about.module.css";
+//COMPONENTS
+import Navigation from "../components/Navigation";
+//ICONS
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+
+import Header from "../components/Header";
 const About = ({ burgerMenuStatus, burgerMenuHandler }) => {
   return (
-    <div className={styles["grid-container"]}>
+    <div className={sharedStyles["grid-container"]}>
       <nav className={styles["Hamburger-menu-container"]}>
         <button onClick={burgerMenuHandler}>
           {burgerMenuStatus ? (
@@ -24,9 +30,9 @@ const About = ({ burgerMenuStatus, burgerMenuHandler }) => {
       >
         <Navigation burgerMenuStatus={burgerMenuStatus} />
       </nav>
-      <div className={styles["page-title-container"]}>
-        <h1>ABOUT ME</h1>
-      </div>
+      <header className={styles["page-title-container"]}>
+        <Header title='ABOUT ME'/>
+      </header>
       <section className={styles.biography}>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium

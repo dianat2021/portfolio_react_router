@@ -11,6 +11,7 @@ import Hobbies from './pages/Hobbies'
 import Certificates from './pages/Certificates'
 import Contact from './pages/Contact'
 
+
 function App() {
   const [burgerMenuStatus, setBurgerMenuStatus] = useState(false);
 
@@ -22,7 +23,7 @@ function App() {
       <Route path="/" element={<HomeLayout/>}>
         <Route index element={<Home burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler}/>}/>
         <Route path="about" element={<About burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler}/>}/>
-        <Route path="skills" element={<Skills/>}/>
+        <Route path="skills" element={<Skills burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler}/>}/>
         <Route path="hobbies" element={<Hobbies/>}/>
         <Route path="certificates" element={<Certificates/>}/>
         <Route path="contact" element={<Contact burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler}/>}/>

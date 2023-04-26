@@ -1,6 +1,12 @@
 import { React, Fragment } from "react";
+//STYLES
+import sharedStyles from "../styles/sharedCSS/sharedcss.module.css";
 import styles from "../styles/contact/Contact.module.css";
+//COMPONENTS
 import Navigation from "../components/Navigation";
+import Button from "../components/Button";
+import Header from "../components/Header";
+//ICONS
 import { MdOutlineLocationOn } from "react-icons/md";
 import { BsEnvelope } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
@@ -9,12 +15,12 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import Button from "../components/Button";
+
 const Contact = ({ burgerMenuStatus, burgerMenuHandler }) => {
   console.log(burgerMenuStatus);
   return (
     <Fragment>
-      <div className={styles["grid-container"]}>
+      <div className={sharedStyles["grid-container"]}>
         <nav
           className={
             burgerMenuStatus
@@ -36,7 +42,7 @@ const Contact = ({ burgerMenuStatus, burgerMenuHandler }) => {
         </div>
 
         <div className={styles["contact-title-container"]}>
-          <h1>CONTACT</h1>
+          <Header title='CONTACT ME'/>
         </div>
         <div className={styles["contact-form-message"]}>
           <p>
@@ -44,7 +50,6 @@ const Contact = ({ burgerMenuStatus, burgerMenuHandler }) => {
             aliquam cumque sunt consectetur rem praesentium quis deleniti sit
             beatae.
           </p>
-          <hr></hr>
         </div>
 
         <div className={styles["contact-form-container"]}>
