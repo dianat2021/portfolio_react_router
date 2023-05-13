@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
 .page-title{
     /* margin-top: 1rem; */
-    font-size: 1.7rem;
+    font-size: 1.9rem;
+    font-family: 'Merienda', cursive;
+    color: #1b1c3a;
 }
+@media only screen and (max-width: 480px) {
+    .page-title {
+        font-size: 1.7rem;
+    }
+  }

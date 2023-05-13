@@ -5,7 +5,8 @@ const Skill = ({title,description,logo}) => {
     <Fragment>
         <div className={styles['skill-container']}>
             <div className={styles['skill-description']}>
-                <h3>{title}</h3>
+                <h2 className={styles['skill-title']}>{title}</h2>
+                <br></br>
                 <p>{description}</p>
             </div>
             <div className={styles['skill-logo-container']}>
