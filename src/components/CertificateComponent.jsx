@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
-import styles from "../styles/certificateComponent/certificate.module.css";
-import { myCertificates } from "../data/certificates_information";
-const certificate = ({
+import styles from "../styles/components/certificateComponent.module.css";
+const CertificateComponent = ({
   logo,
   course,
   lecturer,
@@ -11,10 +10,11 @@ const certificate = ({
 }) => {
   return (
     <Fragment>
-      <div className={styles["certificate-container"]}>
+      <main className={styles['certificates-main-container']}>
         <section className={styles["certificate-logo-container"]}>
           <div className={styles["certificate-logo"]}>{logo}</div>
         </section>
+
         <section className={styles["certificate-decription-container"]}>
           <div className={styles["certificate-information"]}>
             <p>
@@ -36,9 +36,9 @@ const certificate = ({
             </a>
           </div>
         </section>
-      </div>
+      </main>
     </Fragment>
   );
 };
 
-export default certificate;
+export default CertificateComponent;

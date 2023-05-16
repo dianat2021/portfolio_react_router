@@ -6,11 +6,12 @@ import HomeLayout from "./layouts/HomeLayout";
 import './App.css'
 //-----PAGES-----
 import Home from './pages/Home'
-import About from './pages/About'
-import Skills from './pages/Skills'
-import Hobbies from './pages/Hobbies'
-import Certificates from './pages/Certificates'
-import Contact from './pages/Contact'
+import AboutPage from './pages/AboutPage'
+import SkillsPage from './pages/SkillsPage'
+import HobbiesPage from './pages/HobbiesPage'
+import CertificatesPage from './pages/CertificatesPage'
+import ContactPage from './pages/ContactPage'
+
 
 
 function App() {
@@ -23,11 +24,11 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<HomeLayout/>}>
         <Route index element={<Home burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler} setBurgerMenuStatus={setBurgerMenuStatus}/>} />
-        <Route path="about" element={<About burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler}/>}/>
-        <Route path="skills" element={<Skills burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler}/>}/>
-        <Route path="hobbies" element={<Hobbies burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler}/>}/>
-        <Route path="certificates" element={<Certificates burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler} />}/>
-        <Route path="contact" element={<Contact burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler}/>}/>
+        <Route path="about" element={<AboutPage burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler}/>}/>
+        <Route path="skills" element={<SkillsPage burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler}/>}/>
+        <Route path="hobbies" element={<HobbiesPage burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler}/>}/>
+        <Route path="certificates" element={<CertificatesPage burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler} />}/>
+        <Route path="contact" element={<ContactPage burgerMenuStatus={burgerMenuStatus} burgerMenuHandler={burgerMenuHandler}/>}/>
       </Route>
     )
   )

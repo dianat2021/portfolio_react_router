@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hobby-component-container {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .hobby-title {
+    font-size: 1.4rem;
+    font-weight: bolder;
+  }
+  .hobby-description {
+    flex-basis: 75%;
+    background-color: #dff7ff;
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.2rem;
+  }
+  .hobby-logo-container {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #dff7ff;
+  }
+  .hobby-logo {
+    width: 50%;
+    height: 75%;
+    min-width: 110px;
+    min-height: 150px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

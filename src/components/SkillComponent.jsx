@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
-import styles from "../styles/skillComponent/skill.module.css";
-const Skill = ({title,description,logo}) => {
+import styles from "../styles/components/skillComponent.module.css";
+const SkillComponent = ({title,description,logo}) => {
   return (
     <Fragment>
-        <div className={styles['skill-container']}>
+        <div className={styles['skill-component-container']}>
             <div className={styles['skill-description']}>
                 <h2 className={styles['skill-title']}>{title}</h2>
                 <br></br>
@@ -17,4 +17,4 @@ const Skill = ({title,description,logo}) => {
   )
 }
 
-export default Skill
+export default SkillComponent
