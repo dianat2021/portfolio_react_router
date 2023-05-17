@@ -1,14 +1,50 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useRef, useState } from "react";
 import Navbar from "../components/Navbar";
 import styles from "../styles/pages/contact.module.css";
 //ICONS
-import { MdOutlineLocationOn } from "react-icons/md";
 import { BsEnvelope } from "react-icons/bs";
-import { CgWebsite } from "react-icons/cg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGitSquare } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+import { IoWarning } from "react-icons/io5";
+
+import { formValidationHandler } from "../validation/validation";
 const ContactPage = () => {
+  const textareaElement = useRef();
+  const inputElements = useRef("input");
+  const [textareaLength, setTextareaLength] = useState(0);
+  const [nameInput, setNameInput] = useState("");
+  const [emailInput, setEmailInput] = useState("");
+  const [messageInput, setMessageInput] = useState();
+  const [errorMessage, setErrorMessage] = useState("");
+  const [errorStatus, setErrorStatus] = useState(false);
+
+  console.log(inputElements);
+  const messageInputHandler = () => {
+    setErrorMessage("");
+    setTextareaLength(textareaElement.current.value.length);
+    setMessageInput(textareaElement.current.value);
+  };
+  const nameInputHandler = (e) => {
+    setErrorMessage("");
+    setErrorStatus(false);
+    setNameInput(e.target.value);
+  };
+  const emailInputHandler = (e) => {
+    setErrorMessage("");
+    setErrorStatus(false);
+    setEmailInput(e.target.value);
+  };
+
+  const submitFormHandler = (e) => {
+    e.preventDefault();
+    formValidationHandler(
+      nameInput,
+      emailInput,
+      messageInput,
+      setErrorStatus,
+      setErrorMessage
+    );
+  };
   return (
     <Fragment>
       <header>
@@ -22,60 +58,62 @@ const ContactPage = () => {
             aliquam cumque sunt.
           </p>
         </section>
-
         <section className={styles["contact-form-container"]}>
-          <form className={styles["contact-form"]}>
-            <input type="text" placeholder="Enter your name" required />
+          <form className={styles["contact-form"]} onSubmit={submitFormHandler}>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              onChange={nameInputHandler}
+            />
             <input
               type="email"
               placeholder="Enter your email address"
-              required
+              onChange={emailInputHandler}
             />
             <textarea
-              maxLength="200"
+              maxLength="500"
               placeholder="Enter your message (Max 500 characters)"
-              required
+              ref={textareaElement}
+              onChange={messageInputHandler}
             />
+            <p className={styles["form-feedback-container"]}>
+              <label className={styles["form-validation-message"]}>
+                {errorStatus ? errorMessage : ""}
+              </label>
+              <label className={styles["message-counter-label"]}>
+                {textareaLength ? textareaLength : 0}/500
+              </label>
+            </p>
             <button className={styles["send-button"]}>Send</button>
           </form>
           <div className={styles["contact-details-container"]}>
-            <p>
-              <label>
-                <MdOutlineLocationOn color="#122954" size={"3rem"} />
-              </label>
-              <span>Oslo, Norway</span>
-            </p>
-            <p>
-              <label>
-                <BsEnvelope color="#122954" size={"3rem"} />
-              </label>
-              <span> dianat.reza66@gmail.com</span>
-            </p>
-            <p>
-              <label>
-                <CgWebsite color="#122954" size={"3rem"} />
-              </label>
-              <span>SomethingSomething@github.com</span>
-            </p>
-            <a href="https://www.linkedin.com/in/mohammadreza-dianat-5ab75a209/">
-              <FaLinkedin color="#0072b1" size={"3rem"} />
-            </a>
-            <a href="https://instagram.com/reza66459?igshid=ZDdkNTZiNTM=">
-              <FaGitSquare color="#f34f29" size={"3rem"} />
-            </a>
+            <span className={styles["contact-details-item"]}>
+              <a href="https://www.linkedin.com/in/mohammadreza-dianat-5ab75a209/">
+                <FaLinkedin
+                  color="#122954"
+                  size={"4rem"}
+                  className={styles["contact-details-icons"]}
+                />
+              </a>
+            </span>
+            <span className={styles["contact-details-item"]}>
+              <BsEnvelope
+                color="#122954"
+                size={"4rem"}
+                className={styles["contact-details-icons"]}
+              />
+            </span>
+            <span className={styles["contact-details-item"]}>
+              <a href="https://instagram.com/reza66459?igshid=ZDdkNTZiNTM=">
+                <FaGitSquare
+                  color="#122954"
+                  size={"4rem"}
+                  className={styles["contact-details-icons"]}
+                />
+              </a>
+            </span>
           </div>
         </section>
-        {/* <form className={styles["contact-form-container"]}>
-          
-
-        <div className={styles["contact-details-container"]}>
-          <div className={styles["contact-details"]}>
-           
-          </div>
-          <div className={styles["contact-soacial-media"]}>
-           
-          </div>
-        </div> */}
       </main>
     </Fragment>
   );

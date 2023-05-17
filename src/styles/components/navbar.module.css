@@ -13,16 +13,16 @@ nav {
   padding: 0.1rem 4rem 0.1rem 1rem;
   background-color: #122954;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.15);
-  z-index: 999;
+  z-index: 1;
   /* border: 2px solid black; */
 }
 nav span {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
-.navlinks-container ul {
+.navlinks-container {
   display: flex;
   gap: 2rem;
   justify-content: flex-end;
@@ -41,9 +41,73 @@ nav span {
 }
 a .active {
   color: orange;
+  
 }
 .nav-logo:hover {
   transform: rotateZ(360deg);
   transition: 1s;
   transition-delay: 0.5s;
+}
+.hamburger-open-button{
+  display: none;
+}
+.hamburger-close-button{
+  display: none;
+}
+
+@media (max-width: 1000px){
+  .navLink{
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 820px){
+  /* nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  } */
+  nav {
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    /* border: 2px solid black; */
+  }
+  .hamburger-open-button{
+    display: initial;
+    cursor: pointer;
+  }
+  .hamburger-close-button{
+    display: initial;
+    align-self: flex-start;
+    padding: 1rem 0 0 1rem;
+    cursor: pointer;
+  }
+  nav span {
+    border: 2px solid black;
+    justify-content: start;
+  }
+  .navlinks-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    /* width: 100%; */
+    top: 0;
+    right: -1000px;
+    width: 25rem;
+    height: 100vh;
+    background-color: #122954;
+    transition: 1s;
+  }
+  .navLink {
+    font-size: 2rem;
+  }
+  @media (max-width: 420px){
+    nav {
+      padding: 0.1rem 0.2rem 0.1rem 0rem;
+    }
+    .navlinks-container{
+      width: 100%;
+    }
+  }
+  
 }

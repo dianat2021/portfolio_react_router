@@ -13,8 +13,7 @@ import styles from "../styles/pages/home.module.css";
 // import Button from "../components/Button";
 // import HamburgerMenu from "../components/HamburgerMenu";
 
-const Home = ({ burgerMenuStatus, burgerMenuHandler, setBurgerMenuStatus }) => {
-  console.log(burgerMenuStatus);
+const Home = () => {
   return (
     <Fragment>
       <header>

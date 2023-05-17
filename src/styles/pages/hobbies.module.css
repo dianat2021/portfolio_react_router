@@ -1,14 +1,20 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.hobbies-title-container{
-    padding: 7rem 5rem 0 5rem;
-    /* border: 2px solid black; */
+.hobbies-title-container {
+  padding: 7rem 5rem 0 5rem;
+  /* border: 2px solid black; */
 }
-.hobbies-title-container p{
-    margin: 1rem 0 3rem 0;
-    font-weight: bold;
+.hobbies-title-container p {
+  margin: 1rem 0 3rem 0;
+  font-weight: bold;
+}
+@media (max-width: 820px) {
+  .hobbies-title-container {
+    padding: 7rem 1rem 0rem 1rem;
+    /* border: 2px solid black; */
+  }
 }

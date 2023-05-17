@@ -21,6 +21,7 @@ const CertificatesPage = () => {
         <section className={styles["certificates-container"]}>
           {myCertificates.map((item) => (
             <CertificateComponent
+              key={item.key}
               logo={item.logo}
               course={item.course}
               lecturer={item.lecturer}

@@ -42,3 +42,29 @@
     justify-content: center;
     align-items: center;
   }
+
+  @media (max-width: 820px) {
+    .hobby-component-container {
+      flex-direction: column-reverse;
+    }
+    .hobby-logo-container {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    .hobby-description {
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 0px;
+    }
+    /* .skill-logo {
+      max-width: 110px;
+      max-height: 150px;
+      border: 2px solid black;
+    } */
+    
+  @media (max-width: 820px){
+    .hobby-component-container{
+      width: 90%;
+    }
+  }
+  }

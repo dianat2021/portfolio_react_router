@@ -1,7 +1,20 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useRef} from "react";
 import { NavLink } from "react-router-dom";
 import styles from "../styles/components/navbar.module.css";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTimes } from "react-icons/fa";
+
 const Navbar = () => {
+  const menuElement = useRef();
+  const closeMenuHandler = (e) => {
+    menuElement.current.style.right = "-1600px";
+    // menuElement.current.style.display = "none";
+
+  };
+  const openMenuHandler = (e) => {
+    menuElement.current.style.right = "0";
+    // menuElement.current.style.display = "flex";
+  };
   const navLinkStyleHandler = ({ isActive }) => {
     return {
       color: isActive ? "orange" : "",
@@ -12,7 +25,7 @@ const Navbar = () => {
       <nav>
         <span>
           <svg
-            className={styles['nav-logo']}
+            className={styles["nav-logo"]}
             xmlns="http://www.w3.org/2000/svg"
             width="70"
             height="70"
@@ -31,13 +44,23 @@ const Navbar = () => {
           </svg>
         </span>
 
-        <div className={styles['navlinks-container']}>
-          <ul>
+        <div className={styles["navlinks-main-container"]}>
+          <ul className={styles["navlinks-container"]} ref={menuElement}>
+            {/* <li> */}
+                         <FaTimes
+              color="#f58750"
+              size={"4rem"}
+              className={styles["hamburger-close-button"]}
+              onClick={closeMenuHandler}
+            />
+            {/* </li> */}
+ 
             <li>
               <NavLink
                 to="/"
                 className={styles.navLink}
                 style={navLinkStyleHandler}
+                onClick={closeMenuHandler}
               >
                 Home
               </NavLink>
@@ -47,6 +70,7 @@ const Navbar = () => {
                 to="/about"
                 className={styles.navLink}
                 style={navLinkStyleHandler}
+                onClick={closeMenuHandler}
               >
                 About
               </NavLink>
@@ -56,6 +80,7 @@ const Navbar = () => {
                 to="/skills"
                 className={styles.navLink}
                 style={navLinkStyleHandler}
+                onClick={closeMenuHandler}
               >
                 Skills
               </NavLink>
@@ -65,6 +90,7 @@ const Navbar = () => {
                 to="/hobbies"
                 className={styles.navLink}
                 style={navLinkStyleHandler}
+                onClick={closeMenuHandler}
               >
                 Hobbies
               </NavLink>
@@ -74,6 +100,7 @@ const Navbar = () => {
                 to="/certificates"
                 className={styles.navLink}
                 style={navLinkStyleHandler}
+                onClick={closeMenuHandler}
               >
                 Certificates
               </NavLink>
@@ -83,11 +110,18 @@ const Navbar = () => {
                 to="/contact"
                 className={styles.navLink}
                 style={navLinkStyleHandler}
+                onClick={closeMenuHandler}
               >
                 Contact
               </NavLink>
             </li>
           </ul>
+          <GiHamburgerMenu
+            color="#f58750"
+            size={"4rem"}
+            className={styles["hamburger-open-button"]}
+            onClick={openMenuHandler}
+          />
         </div>
       </nav>
     </Fragment>
