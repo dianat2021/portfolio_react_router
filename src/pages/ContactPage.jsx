@@ -5,46 +5,55 @@ import styles from "../styles/pages/contact.module.css";
 import { BsEnvelope } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGitSquare } from "react-icons/fa";
-import { IoWarning } from "react-icons/io5";
+import { IoMdSend } from "react-icons/io";
 
-import { formValidationHandler } from "../validation/validation";
+import {
+  formErrorStatus,
+  formValidationHandler,
+} from "../validation/validation";
+import emailjs from "@emailjs/browser";
+
 const ContactPage = () => {
   const textareaElement = useRef();
-  const inputElements = useRef("input");
   const [textareaLength, setTextareaLength] = useState(0);
   const [nameInput, setNameInput] = useState("");
   const [emailInput, setEmailInput] = useState("");
-  const [messageInput, setMessageInput] = useState();
-  const [errorMessage, setErrorMessage] = useState("");
-  const [errorStatus, setErrorStatus] = useState(false);
+  const [messageInput, setMessageInput] = useState("");
+  const [errorMessage, setErrorMessage] = useState({});
 
-  console.log(inputElements);
   const messageInputHandler = () => {
-    setErrorMessage("");
     setTextareaLength(textareaElement.current.value.length);
     setMessageInput(textareaElement.current.value);
   };
   const nameInputHandler = (e) => {
-    setErrorMessage("");
-    setErrorStatus(false);
+    // setErrorStatus(false);
     setNameInput(e.target.value);
   };
   const emailInputHandler = (e) => {
-    setErrorMessage("");
-    setErrorStatus(false);
+    // setErrorStatus(false);
     setEmailInput(e.target.value);
   };
 
   const submitFormHandler = (e) => {
     e.preventDefault();
-    formValidationHandler(
-      nameInput,
-      emailInput,
-      messageInput,
-      setErrorStatus,
-      setErrorMessage
-    );
+    setErrorMessage(formValidationHandler(nameInput, emailInput, messageInput));
+    if (formErrorStatus()) {
+      console.log("failed");
+      return;
+    } else {
+      emailjs.sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_PUBLIC_KEY
+      );
+      setNameInput("");
+      setEmailInput("");
+      setMessageInput("");
+      setTextareaLength(0)
+    }
   };
+
   return (
     <Fragment>
       <header>
@@ -60,31 +69,50 @@ const ContactPage = () => {
         </section>
         <section className={styles["contact-form-container"]}>
           <form className={styles["contact-form"]} onSubmit={submitFormHandler}>
+            <label className={styles["input-name"]}>Name:</label>
             <input
               type="text"
-              placeholder="Enter your name"
+              name="user_name"
+              placeholder="Enter your fullname"
+              value={nameInput}
               onChange={nameInputHandler}
             />
+            <label className={styles["input-error"]}>
+              {errorMessage.nameError}
+            </label>
+
+            <label className={styles["input-name"]}>Email:</label>
             <input
               type="email"
+              name="user_email"
               placeholder="Enter your email address"
+              value={emailInput}
               onChange={emailInputHandler}
             />
+            <label className={styles["input-error"]}>
+              {errorMessage.emailError}
+            </label>
+
+            <label className={styles["input-name"]}>Message:</label>
             <textarea
               maxLength="500"
+              name="user_message"
               placeholder="Enter your message (Max 500 characters)"
+              value={messageInput}
               ref={textareaElement}
               onChange={messageInputHandler}
             />
             <p className={styles["form-feedback-container"]}>
               <label className={styles["form-validation-message"]}>
-                {errorStatus ? errorMessage : ""}
+                {errorMessage.messageError}
               </label>
               <label className={styles["message-counter-label"]}>
                 {textareaLength ? textareaLength : 0}/500
               </label>
             </p>
-            <button className={styles["send-button"]}>Send</button>
+            <button className={styles["send-button"]}>
+              Send{<IoMdSend size={"1.5rem"} />}{" "}
+            </button>
           </form>
           <div className={styles["contact-details-container"]}>
             <span className={styles["contact-details-item"]}>
