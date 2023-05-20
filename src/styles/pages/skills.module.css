@@ -8,8 +8,12 @@
     padding: 7rem 5rem 0 5rem;
     /* border: 2px solid black; */
 }
+.skills-title-container h1{
+    font-weight: bolder;
+}
 .skills-title-container p{
     margin: 1rem 0 3rem 0;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 @media (max-width: 420px){

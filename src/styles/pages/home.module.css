@@ -27,11 +27,11 @@ h1{
     line-height: 1.5;
 }
 .about-me-button{
-    width: 15rem;
-    height: 2.5rem;
+    width: 18rem;
+    height: 3rem;
     margin-top: 2rem;
     background-color: #f58750;
-    font: bold 1.1rem Barlow, sans-serif;
+    font: bold 1.3rem Barlow, sans-serif;
     cursor: pointer;
     border: none;
     transition: 0.5s;
@@ -67,15 +67,21 @@ h1{
     transform: rotateZ(20deg);
     /* border: 2px solid black; */
 }
-
+/* ======================================================================= */
 @media (max-width: 820px){
     .home-content-container{
         flex-direction: column;
     }
     .home-introduction-container{
         flex-basis: 50%;
-        /* padding: 0 2rem; */
-        border: 2px solid black;
+    }
+    .home-introduction-container p{
+        font-size: 1.3rem;
+    }
+    .about-me-button{
+        width: 20rem;
+        height: 3.5rem;
+        font: bold 1.5rem Barlow, sans-serif;
     }
     .home-picture-container{
         flex-basis: 50%;
@@ -90,10 +96,43 @@ h1{
         width: 70%;
         height: 70%;
     }
-
+/* ======================================================================= */
+    @media (max-width: 820px) and (max-height: 680px){
+        .about-me-button{
+            width: 18rem;
+            height: 3rem;
+            font: bold 1.4rem Barlow, sans-serif;
+        }
+        .home-introduction-container{
+            padding: 7rem 1rem 2rem 1rem;
+        }
+        .home-introduction-container p{
+            font-size: 1.1rem;
+        }
+        .home-picture-container{
+            justify-content: flex-end;
+            padding: 1rem;
+        }
+        .homepage-picture{
+            margin-bottom: 0;
+            transform: rotateZ(5deg);
+            width: 50%;
+            height: 100%;
+        }
+    }
+/* ======================================================================= */
     @media (max-width: 420px){
         .home-introduction-container{
-            padding: 7rem 0.5rem 1rem 0.5rem
+            padding: 7rem 1rem 2rem 1rem
+        }
+        .home-introduction-container p{
+            font-size: 1.1rem;
+        }
+        .about-me-button{
+            margin-top: 1rem;
+        }
+        .homepage-picture{
+            width: 80%;
         }
         h1{
             font-size: 1.6rem;

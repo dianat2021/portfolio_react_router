@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import { myCertificates } from "../data/certificates_information";
 import CertificateComponent from "../components/CertificateComponent";
 import styles from "../styles/pages/certificates.module.css";
+import BackToTheTopButton from "../components/BackToTheTopButton";
 const CertificatesPage = () => {
   return (
     <Fragment>
@@ -31,6 +32,7 @@ const CertificatesPage = () => {
             />
           ))}
         </section>
+        <BackToTheTopButton/>
       </main>
     </Fragment>
   );

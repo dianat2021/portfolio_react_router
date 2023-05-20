@@ -68,15 +68,14 @@
   .about-biography-container {
     flex-basis: 60%;
     gap: 1rem;
-    padding: 4rem 5rem 1rem 5rem;
-    /* border: 2px solid black; */
+    padding: 2rem 2rem
   }
-  @media (max-width: 820px){
-    .about-picture-container{
-      padding: 7rem 0.5rem 1rem 0.5rem;
-    }
-    .about-biography-container {
-      padding: 1rem 1rem 1rem 1rem;
-    }
+  .about-biography-container h1{
+    font-size: 2rem;
+    font-weight: bolder;
   }
+  .about-biography-container p{
+    font-size: 1.2rem;
+  }
+
 }

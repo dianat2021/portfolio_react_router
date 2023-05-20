@@ -80,7 +80,7 @@ a .active {
     cursor: pointer;
   }
   nav span {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     justify-content: start;
   }
   .navlinks-container{

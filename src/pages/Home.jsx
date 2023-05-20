@@ -2,16 +2,9 @@ import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 //COMPONENTS
 import Navbar from "../components/Navbar";
-
-import styles from "../styles/pages/home.module.css";
 //STYLES
-// import styles from "../styles/homePage/Home.module.css";
-// import sharedStyles from "../styles/sharedCSS/sharedcss.module.css";
-// import hamburgerMenu from "../styles/hamburgerMenu/hamburgerMenu.module.css";
-// //COMPONENTS
-// import Navigation from "../components/Navigation";
-// import Button from "../components/Button";
-// import HamburgerMenu from "../components/HamburgerMenu";
+import styles from "../styles/pages/home.module.css";
+
 
 const Home = () => {
   return (

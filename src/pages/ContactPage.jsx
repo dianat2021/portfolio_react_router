@@ -26,11 +26,9 @@ const ContactPage = () => {
     setMessageInput(textareaElement.current.value);
   };
   const nameInputHandler = (e) => {
-    // setErrorStatus(false);
     setNameInput(e.target.value);
   };
   const emailInputHandler = (e) => {
-    // setErrorStatus(false);
     setEmailInput(e.target.value);
   };
 
@@ -62,14 +60,10 @@ const ContactPage = () => {
       <main>
         <section className={styles["contact-title-container"]}>
           <h1>Contact</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nam
-            aliquam cumque sunt.
-          </p>
         </section>
         <section className={styles["contact-form-container"]}>
           <form className={styles["contact-form"]} onSubmit={submitFormHandler}>
-            <label className={styles["input-name"]}>Name:</label>
+            <label className={styles["input-name"]}>Name<b style={{color:'crimson'}}>*</b></label>
             <input
               type="text"
               name="user_name"
@@ -81,7 +75,7 @@ const ContactPage = () => {
               {errorMessage.nameError}
             </label>
 
-            <label className={styles["input-name"]}>Email:</label>
+            <label className={styles["input-name"]}>Email<b style={{color:'crimson'}}>*</b></label>
             <input
               type="email"
               name="user_email"
@@ -93,7 +87,7 @@ const ContactPage = () => {
               {errorMessage.emailError}
             </label>
 
-            <label className={styles["input-name"]}>Message:</label>
+            <label className={styles["input-name"]}>Message<b style={{color:'crimson'}}>*</b></label>
             <textarea
               maxLength="500"
               name="user_message"
@@ -115,11 +109,13 @@ const ContactPage = () => {
             </button>
           </form>
           <div className={styles["contact-details-container"]}>
+            <div className={styles['contact-form-logo']}></div>
+            <div className={styles['contact-icons-container']}>
             <span className={styles["contact-details-item"]}>
               <a href="https://www.linkedin.com/in/mohammadreza-dianat-5ab75a209/">
                 <FaLinkedin
                   color="#122954"
-                  size={"4rem"}
+                  size={"2.5rem"}
                   className={styles["contact-details-icons"]}
                 />
               </a>
@@ -127,7 +123,7 @@ const ContactPage = () => {
             <span className={styles["contact-details-item"]}>
               <BsEnvelope
                 color="#122954"
-                size={"4rem"}
+                size={"2.5rem"}
                 className={styles["contact-details-icons"]}
               />
             </span>
@@ -135,11 +131,12 @@ const ContactPage = () => {
               <a href="https://instagram.com/reza66459?igshid=ZDdkNTZiNTM=">
                 <FaGitSquare
                   color="#122954"
-                  size={"4rem"}
+                  size={"2.5rem"}
                   className={styles["contact-details-icons"]}
                 />
               </a>
             </span>
+            </div>
           </div>
         </section>
       </main>

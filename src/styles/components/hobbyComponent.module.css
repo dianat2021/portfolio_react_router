@@ -45,6 +45,7 @@
 
   @media (max-width: 820px) {
     .hobby-component-container {
+      width: 80%;
       flex-direction: column-reverse;
     }
     .hobby-logo-container {
@@ -56,15 +57,10 @@
       border-bottom-right-radius: 10px;
       border-top-left-radius: 0px;
     }
-    /* .skill-logo {
-      max-width: 110px;
-      max-height: 150px;
-      border: 2px solid black;
-    } */
-    
-  @media (max-width: 820px){
-    .hobby-component-container{
+  }
+  @media (max-width: 420px) {
+    .hobby-component-container {
       width: 90%;
     }
-  }
+    
   }

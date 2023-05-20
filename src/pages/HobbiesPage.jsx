@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import { myhobbies } from "../data/hobbies_information";
 import HobbyComponent from "../components/HobbyComponent";
 import styles from "../styles/pages/hobbies.module.css";
+import BackToTheTopButton from "../components/BackToTheTopButton";
 const HobbiesPage = () => {
   return (
     <Fragment>
@@ -29,6 +30,7 @@ const HobbiesPage = () => {
             />
           ))}
         </section>
+        <BackToTheTopButton/>
       </main>
     </Fragment>
   );

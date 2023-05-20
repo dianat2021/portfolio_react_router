@@ -1,8 +1,10 @@
 import React, { Fragment } from 'react'
 import Navbar from '../components/Navbar'
-import SkillComponent from '../components/SkillComponent'
 import {mySkills} from '../data/skills_information.js'
-
+//COMPONENTS
+import SkillComponent from '../components/SkillComponent'
+import BackToTheTopButton from '../components/BackToTheTopButton';
+//STYLES
 import styles from "../styles/pages/skills.module.css";
 
 const SkillsPage = () => {
@@ -26,6 +28,7 @@ const SkillsPage = () => {
           ))}
 
     </main>
+    <BackToTheTopButton/>
     </Fragment>
   )
 }

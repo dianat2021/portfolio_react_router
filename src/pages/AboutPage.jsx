@@ -1,7 +1,10 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
+//COMPONENTS
 import Navbar from "../components/Navbar";
+//STYLES
 import styles from "../styles/pages/about.module.css";
+
 const AboutPage = () => {
   return (
     <Fragment>
