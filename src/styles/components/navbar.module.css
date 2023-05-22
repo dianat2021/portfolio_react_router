@@ -95,7 +95,8 @@ a .active {
     right: -1000px;
     width: 25rem;
     height: 100vh;
-    background-color: #122954;
+    background-color: rgba(18, 41, 84, 0.8)  ;
+    backdrop-filter: blur(10px);
     transition: 1s;
   }
   .navLink {

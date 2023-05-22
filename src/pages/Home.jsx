@@ -15,7 +15,7 @@ const Home = () => {
       <main>
         <section className={styles['home-content-container']}>
           <div className={styles['home-introduction-container']}>
-            <h1>Hi! I'm Mohammadreza Dianat</h1>
+            <h1>Hi! I'm Reza Dianat</h1>
             <p>
               I'm a Senior Web Developer specializing in front-end development.
               Experienced with all stages of the development cycle for dynamic
