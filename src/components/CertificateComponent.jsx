@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
+//STYLES
 import styles from "../styles/components/certificateComponent.module.css";
+
 const CertificateComponent = ({
   logo,
   course,
@@ -15,7 +17,7 @@ const CertificateComponent = ({
           <div className={styles["certificate-logo"]}>{logo}</div>
         </section>
 
-        <section className={styles["certificate-decription-container"]}>
+        <section className={styles["certificate-description-container"]}>
           <div className={styles["certificate-information"]}>
             <p>
               <b>Course:</b> {course}

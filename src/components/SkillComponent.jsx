@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from 'react';
+//STYLES
 import styles from "../styles/components/skillComponent.module.css";
 const SkillComponent = ({title,description,logo}) => {
   return (

@@ -1,9 +1,13 @@
 import React, { Fragment } from "react";
+//COMPONENTS
 import Navbar from "../components/Navbar";
-import { myhobbies } from "../data/hobbies_information";
 import HobbyComponent from "../components/HobbyComponent";
-import styles from "../styles/pages/hobbies.module.css";
 import BackToTheTopButton from "../components/BackToTheTopButton";
+//DATA
+import { myhobbies } from "../data/hobbies_information";
+//STYLES
+import styles from "../styles/pages/hobbies.module.css";
+
 const HobbiesPage = () => {
   return (
     <Fragment>

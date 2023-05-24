@@ -1,5 +1,7 @@
 import React, { useState, useEffect, Fragment } from "react";
+//STYLES
 import styles from "../styles/components/backtothetopbutton.module.css";
+//COMPONENTS
 import Tooltip from "@mui/material/Tooltip";
 
 const BackToTheTopButton = () => {

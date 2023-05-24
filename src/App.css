@@ -1,12 +1,7 @@
 body {
+  height: 100%;
   background-color: #aec6cf;
   font-family: "Barlow", sans-serif;
   color: #1b1c3a;
 }
-/* .backdrop-container{
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  background-color: black;
-  z-index: 2000;
-} */
+

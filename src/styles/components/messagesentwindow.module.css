@@ -29,7 +29,6 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    /* transition: 2s; */
   }
   .message-sent-form button{
     width: 10rem;

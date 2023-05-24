@@ -19,13 +19,11 @@ main .certificates-container {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  /* border: 2px solid black; */
+  border: 2px solid black;
 }
 @media (max-width: 420px) {
     .certificates-title-container {
         padding: 7rem 1rem 0 1rem;
       }
-      .certificates-container {
-        gap: 0.5rem;
-      }
+
 }

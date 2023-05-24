@@ -1,9 +1,13 @@
 import React, { Fragment } from "react";
+//COMPONENTS
 import Navbar from "../components/Navbar";
-import { myCertificates } from "../data/certificates_information";
 import CertificateComponent from "../components/CertificateComponent";
-import styles from "../styles/pages/certificates.module.css";
 import BackToTheTopButton from "../components/BackToTheTopButton";
+//DATA
+import { myCertificates } from "../data/certificates_information";
+//STYLES
+import styles from "../styles/pages/certificates.module.css";
+
 const CertificatesPage = () => {
   return (
     <Fragment>

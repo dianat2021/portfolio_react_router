@@ -3,46 +3,22 @@
   margin: 0;
   padding: 0;
 }
-
-
-.contact-title-container {
-  flex-basis: 30%;
-  padding: 7rem 5rem 1rem 5rem;
-  /* border: 2px solid white; */
+.main-container{
+  display: flex;
+  height: 100vh;
+  padding-top: 5rem;
 }
 .contact-form-container {
-  display: flex;
-
-  /* border: 2px solid green; */
+  flex-basis: 60%;
 }
-.contact-form-icons-container {
-  flex-basis: 10%;
-  /* border: 2px solid black; */
+.contact-title-container {
+  flex-basis: 30%;
+  padding: 2rem 5rem 1rem 5rem;
 }
 .contact-form {
-  flex-basis: 90%;
-  /* height: 70vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 2px solid black; */
-}
-.input-name {
-  width: 30rem;
-  font-weight: bold;
-}
-.input-error {
-  width: 30rem;
-  font-size: 0.9rem;
-  color: crimson;
-}
-.contact-form input,
-.contact-form textarea {
-  width: 30rem;
-  /* border-radius: 5px; */
-  outline: none;
-  border: 2px solid #122954;
-  background-color: transparent;
 }
 .contact-form input {
   border-top: 0;
@@ -50,7 +26,13 @@
   border-right: 0;
   height: 2rem;
   margin-bottom: 0.5rem;
-  /* padding: 0 0.5rem; */
+}
+.contact-form input,
+.contact-form textarea {
+  width: 30rem;
+  outline: none;
+  border: 2px solid #122954;
+  background-color: transparent;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
@@ -62,11 +44,27 @@
   padding: 0.5rem;
   margin-top: 0.5rem;
 }
+.input-name {
+  width: 30rem;
+  font-weight: bold;
+}
+.input-error {
+  width: 30rem;
+  font-size: 0.9rem;
+  color: crimson;
+}
 .form-feedback-container {
   display: flex;
   width: 30rem;
   margin-top: -0.1rem;
-  /* border: 2px solid black; */
+}
+.form-validation-message {
+  flex-basis: 90%;
+  color: crimson;
+  font-size: 0.9rem;
+}
+.exceeded-message-limit {
+  color: crimson;
 }
 .send-button {
   width: 15rem;
@@ -91,18 +89,22 @@
   border-color: #662d91;
   color: #662d91;
 }
-.form-validation-message {
-  flex-basis: 90%;
-  color: crimson;
-  font-size: 0.9rem;
-  /* font-weight: bold; */
+.contact-photo-container{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  /* background-color: pink; */
 }
-
-
-.exceeded-message-limit {
-  color: crimson;
+.contact-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("E:\React\react-portfolio\src\images\contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 .backdrop {
   position: fixed;
   top: 0px;
@@ -112,43 +114,41 @@
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 3;
 }
-
+/* -------------------------------------------------------------------- */
 @media (max-width: 820px) {
-
-
-
+  .main-container{
+    flex-direction: column-reverse;
+  }
+  .contact-form-container{
+    flex-basis: 70%;
+  }
+  .contact-photo-container{
+    flex-basis: 30%;
+  }
   .contact-title-container{
-    display: none;
-    padding: 4rem 5rem 0rem 6rem;
+    padding: 2rem 5rem 0rem 6rem;
     flex-basis: 15%;
   }
   .contact-title-container h1 {
     font-size: 2rem;
     font-weight: bolder;
-
   }
   .contact-form-container {
     flex-direction: column;
-  }
-  .contact-form-icons-container{
-    flex-basis: 30%;
-    margin-top: 72px;
-    background-image: url("E:\React\react-portfolio\src\images\contact.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
   }
   .contact-form {
     gap: 0.3rem;
     flex-basis: 70%;
     margin-top: 2rem;
-    /* flex-direction: column; */
   }
+
   .contact-form input {
     width: 75%;
     height: 2.5rem;
     font-size: 1.1rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
   }
   .contact-form textarea {
     width: 75%;
@@ -159,7 +159,6 @@
   .input-error {
     width: 75%;
   }
-
   .send-button {
     width: 20rem;
     height: 4rem;
@@ -168,23 +167,28 @@
   .form-feedback-container {
     width: 75%;
   }
+  .contact-photo{
+    width: 100%;
+    height: 100%;
+    background-image: url("E:\React\react-portfolio\src\images\contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
-
 /* --------------------------------------------------------------- */
 @media (max-width: 420px) {
+  .contact-form-container{
+    flex-basis: 60%;
+  }
+  .contact-photo-container{
+    flex-basis: 40%;
+  }
   .contact-title-container {
-    padding: 7rem 1rem 0rem 1rem;
-  }
-  .contact-form-container {
-    padding: 0;
-  }
-  .contact-form-icons-container{
-    flex-basis: 50%;
-    /* margin-top: 72px; */
-
+    display: none;
   }
   .contact-form {
-    align-items: end;
+    margin-top: 1rem;
     padding: 0.5rem;
   }
   .contact-form input,

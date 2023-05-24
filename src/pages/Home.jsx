@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar";
 //STYLES
 import styles from "../styles/pages/home.module.css";
 
-
 const Home = () => {
   return (
     <Fragment>

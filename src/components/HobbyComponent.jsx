@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
+//STYLES
 import styles from "../styles/components/hobbyComponent.module.css";
+
 const HobbyComponent = ({title,description,logo}) => {
   return (
     <Fragment>
