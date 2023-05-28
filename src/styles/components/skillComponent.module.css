@@ -67,3 +67,9 @@
     }
   }
 }
+  /* ---------------------------------------------- */
+@media (max-width: 380px){
+  .skill-component-container p {
+    font-size: 0.9rem;
+  }
+}

@@ -83,7 +83,7 @@ const ContactPage = () => {
         {/* ---------------------------------------------- */}
         <section className={styles["contact-form-container"]}>
           <div className={styles["contact-title-container"]}>
-            <h1>Contact</h1>
+            <h1>CONTACT</h1>
           </div>
           <form className={styles["contact-form"]} onSubmit={submitFormHandler}>
             <label className={styles["input-name"]}>Name*</label>
@@ -92,7 +92,7 @@ const ContactPage = () => {
               name="user_name"
               placeholder="Your full name"
               value={nameInput}
-              autocomplete="off"
+              autoComplete="off"
               onChange={nameInputHandler}
             />
             <label className={styles["input-error"]}>
@@ -105,7 +105,7 @@ const ContactPage = () => {
               name="user_email"
               placeholder="Your Email address"
               value={emailInput}
-              autocomplete="off"
+              autoComplete="off"
               onChange={emailInputHandler}
             />
             <label className={styles["input-error"]}>

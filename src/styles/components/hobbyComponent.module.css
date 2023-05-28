@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 .hobby-component-container {
   width: 80%;
   height: fit-content;
@@ -58,9 +59,16 @@
     border-top-left-radius: 0px;
   }
 }
+
 /* ------------------------------------------------------ */
 @media (max-width: 420px) {
   .hobby-component-container {
     width: 90%;
+  }
+}
+/* ------------------------------------------------------ */
+@media (max-width: 380px) {
+  .hobby-component-container p{
+    font-size: 0.9rem;
   }
 }

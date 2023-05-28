@@ -5,7 +5,7 @@ import styles from './layout.module.css'
 const HomeLayout = () => {
   return (
     <Fragment>
-      <main className={styles['backdrop-container']}>
+      <main>
         <Outlet/>
       </main>
     </Fragment>

@@ -15,7 +15,7 @@ const SkillsPage = () => {
       </header>
     <main>
       <section className={styles['skills-title-container']}>
-        <h1>Skills</h1>
+        <h1>SKILLS</h1>
         <p>Following is the list of programming languages and libraries that I have worked with</p>
       </section>
     {mySkills.map((skill) => (

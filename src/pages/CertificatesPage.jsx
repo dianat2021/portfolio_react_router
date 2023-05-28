@@ -16,7 +16,7 @@ const CertificatesPage = () => {
       </header>
       <main>
         <section className={styles["certificates-title-container"]}>
-          <h1>Certificates</h1>
+          <h1>CERTIFICATES</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias eius
             nisi rem illum velit obcaecati. Quas ea minus voluptas quae.

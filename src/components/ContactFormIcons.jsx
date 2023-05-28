@@ -47,6 +47,7 @@ const ContactFormIcons = () => {
             }
             placement="bottom"
             arrow={true}
+           
           >
             <button
               style={{ background: "none", border: "none", cursor: "pointer" }}
@@ -57,11 +58,12 @@ const ContactFormIcons = () => {
                 color="#f58750"
                 size={"2.2rem"}
                 className={styles["contact-icons"]}
+                // onClick={()=> alert('hi')}
               />
             </button>
           </Tooltip>
 
-          <Tooltip title="Github repository" placement="bottom" arrow={true}>
+          <Tooltip title="Github repository" placement="bottom" arrow={true} >
             <a href="https://instagram.com/reza66459?igshid=ZDdkNTZiNTM=">
               <FaGitSquare
                 color="#f58750"

@@ -16,7 +16,7 @@ const HobbiesPage = () => {
       </header>
       <main>
         <section className={styles["hobbies-title-container"]}>
-          <h1>Hobbies</h1>
+          <h1>HOBBIES</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
             doloribus numquam reprehenderit repudiandae ipsa itaque corrupti
