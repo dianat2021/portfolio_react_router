@@ -200,6 +200,6 @@ export const myCertificates = [
       </g>
     </svg>
     ),
-    link: "https://www.udemy.com/certificate/UC-6f9f027b-028d-497b-990e-c22acefb7429/",
+    link: "https://drive.google.com/file/d/1orZKbAh4yFeT5DFd2ho3k82L9gupa9Ru/view?usp=share_link",
   },
 ];

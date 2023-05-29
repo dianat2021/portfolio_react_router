@@ -47,16 +47,16 @@ const ContactPage = () => {
       console.log("failed");
       return;
     } else {
-      // emailjs.sendForm(
-      //   process.env.REACT_APP_SERVICE_ID,
-      //   process.env.REACT_APP_TEMPLATE_ID,
-      //   e.target,
-      //   process.env.REACT_APP_PUBLIC_KEY
-      // );
-      // setNameInput("");
-      // setEmailInput("");
-      // setMessageInput("");
-      // setTextareaLength(0);
+      emailjs.sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_PUBLIC_KEY
+      );
+      setNameInput("");
+      setEmailInput("");
+      setMessageInput("");
+      setTextareaLength(0);
       setBackDropStatus(true);
       messageSentWindow.current.style.top = "0px";
     }

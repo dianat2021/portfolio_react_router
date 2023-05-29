@@ -19,7 +19,7 @@ const HobbiesPage = () => {
           <h1>HOBBIES</h1>
           <p>
             Following is the list of activities that I usually do in my free
-            time.
+            time:
           </p>
         </section>
 

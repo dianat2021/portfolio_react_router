@@ -3,7 +3,7 @@ export const myhobbies = [
       id: 1,
       title: "Gym",
       description:
-        "I'm a big fan of sports. I used to do gymnastics, karate, play volleyball, handball, and football. Among them all football was the one that I played the most. During high school years, when i was almost 16 years old, I started training in the gym and I've been keeping this positive habit since then. I'm not planning to become the next Hulk or Hercules, just trying to stay fit and healthy.",
+        "I'm a big fan of sports. I used to do gymnastics, karate, play volleyball, handball, and football. Among them,  football was the one that I played the most. During my high school years, when I was almost 16 years old, I started training in the gym, and I've been keeping this positive habit since then. I'm not planning to become the next Hulk or Hercules; just trying to stay fit and healthy.",
       logo: (
         <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ export const myhobbies = [
       id: 2,
       title: "Reading",
       description:
-        "I should confess that I wasn't a big fan of reading books when I was a child but it grew in me over time. I started reading novels and history books and I became more and more interested in reading. Also, I've read many English short stories to improve and maintain my English level. As a recommendation, I can suggest the book 'The Egyptian' by Mika Waltari which is a historical novel.",
+        "I can share with honesty I wasn't a big fan of reading books at school as a child, but it grew in me over time. I began reading novels and history books, which are more within my field of interest, and I became more interested in reading. Also, I've read many English short stories to improve and maintain my English level. As a recommendation, I can suggest the book 'The Egyptian' by Mika Waltari, which is a historical novel.",
       logo: (
         <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@ export const myhobbies = [
       id: 3,
       title: "Animals",
       description:
-        "I believe animals speak the language of love, innocence, and kindness. We all have our favorite animals and mine are dogs, foxes, and koalas. My girl friend and I had the most beautiful, cutest, and kindest dog named Juma. Unfortunately, she left us a while ago due to sickness. I believe the wiser and the more mature we become, the more we understand animals and want to be closer to them.",
+        "I believe animals speak the language of love, innocence, and kindness. We all have our favorite animals, and mine are dogs, foxes, and koalas. My girlfriend and I had the most beautiful, cutest, and kindest dog named Juma. Unfortunately, she left us a while ago due to sickness. I believe the wiser and the more mature we become, the more we understand animals and want to be closer to them.",
       logo: (
         <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +187,7 @@ export const myhobbies = [
       id: 4,
       title: "Music",
       description:
-        "Music has been an inseparable part of my life. It's been days that I've spent hours listening to music. Usually, I listen to music most of the times, even when I'm studying. I listen to different genres and my favorites are Metal, Rock, Ambient, and Folk. I love going to concerts and festivals and also participating as a volunteer. ",
+        "Music has been an inseparable part of my life. It's been days that I've spent hours listening to music. Usually, I listen to music most of the time, even when I'm studying. I listen to different genres, and my favorites are Metal, Rock, Ambient, and Folk. I love going to concerts and festivals and also participating as a volunteer.",
       logo: (
         <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +244,7 @@ export const myhobbies = [
       id: 5,
       title: "Documentaries",
       description:
-        "I consider documentaries as the language of details. To dive deeper and deeper into a concept. Mostly, I'm interested in historic documentaries. The ones that dive deep into the life and culture of ancient empires and kingdoms. I find it so exciting to learn about ancient Egypt, Babylon, Sumeria, Persia, etc. Great lessons can be learned from history. ",
+        "I consider documentaries as the language of details. To dive deeper and deeper into a concept. Mostly, I'm interested in historical documentaries, ones that take on a journey into the life and culture of long-gone empires and kingdoms. I find it so exciting to learn about ancient Egypt, Babylon, Sumeria, Persia, etc. I believe we can learn great lessons from studying history.",
       logo: <svg
       xmlns="http://www.w3.org/2000/svg"
       width="120"
@@ -308,7 +308,7 @@ export const myhobbies = [
       id: 6,
       title: "Video Games",
       description:
-        "I can't say how much time in my life I've spent on playing video games. Maybe thousands of hours! I had different gaming consoles such as Atari, Sega, Playstation 1, and after that I continued my gaming adventure on my PC. My favorite games were Pro Evolution Soccer, Prince of Persia, Splinter Cell, Hitman, Need for Speed, and etc. But life became hectic and slowly i got detached from video games. But I'm planning to start over soon with buying a new Play Station.",
+        "I can't say how much time I've spent playing video games. Maybe thousands of hours! I had different gaming consoles, such as Atari, Sega, and Playstation 1, and after that, I continued my gaming adventure on my PC. My favorite games were Pro Evolution Soccer, Prince of Persia, Splinter Cell, Hitman, Need for Speed, etc. But life became hectic, and slowly I got detached from video games. But I plan to start over soon by buying a new Play Station.",
       logo:   <svg
       xmlns="http://www.w3.org/2000/svg"
       width="120"
@@ -341,7 +341,7 @@ export const myhobbies = [
       id: 7,
       title: "Board Games",
       description:
-        "I used to play chess a lot. But after a while I lost interest. Instead, I became a big fan of backgammon. It's fun and a great distraction from the hustle and bustle of life. I'd rather to play in the real world than playing it virtually online. But when there's no one around to play with, playing online could be a good solution.",
+        "I used to play chess a lot. But after a while, I lost interest. Instead, I became a big fan of Backgammon. It's fun and a great distraction from the hustle and bustle of life. I'd rather play in the real world than play it virtually online. But when there's no one around to play with, playing online could be a good solution.",
       logo:  <svg
       xmlns="http://www.w3.org/2000/svg"
       width="120"

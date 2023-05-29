@@ -18,7 +18,7 @@ const CertificatesPage = () => {
         <section className={styles["certificates-title-container"]}>
           <h1>CERTIFICATES</h1>
           <p>
-           Following is a short list of the courses that I participated in and certifications that I have achieved.. 
+           Following is a short list of the courses that I participated in and certifications that I have achieved: 
           </p>
         </section>
 

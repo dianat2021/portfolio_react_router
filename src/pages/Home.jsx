@@ -16,10 +16,7 @@ const Home = () => {
           <div className={styles['home-introduction-container']}>
             <h1>Hi! I'm Reza Dianat</h1>
             <p>
-              I'm a Senior Web Developer and software engineer specializing in front-end development.
-              Experienced with all stages of the development cycle for dynamic
-              web projects. Experienced in programming languages such as HTML5,
-              CSS, JavaScript, React, Redux, TypeScript, and PostgreSQl.
+            I'm a Senior Web Developer and software engineer specializing in front-end development. I am experienced with all stages of the development cycle for dynamic web projects and in programming languages such as HTML5, CSS, JavaScript, React, Redux, TypeScript, and PostgreSQL. 
             </p>
             <NavLink to="/about" className={styles['about-me-button']}>About Me</NavLink>
           </div>
