@@ -48,7 +48,7 @@ nav span {
   transition: 0.3s ease;
 }
 .navLink:hover {
-  color: #EADDCA;
+  color: #C2B280;
 }
 a .active {
   color: #f58750;
@@ -123,6 +123,9 @@ a .active {
     }
     .navlinks-container {
       width: 100%;
+    }
+    .hamburger-open-button{
+      margin-right: 0.5rem;
     }
   }
 }

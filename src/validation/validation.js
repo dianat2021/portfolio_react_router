@@ -45,13 +45,10 @@ export const formValidationHandler = (nameInput, emailInput, messageInput) => {
   } else {
     errors = { errorStatus: false };
   }
-  // console.log(errors);
-  // console.log(errors.errorStatus);
   return errors;
 };
 
 // In JavaScript we have the following conditional statements: Use if to specify a block of code to be executed, if a specified condition is true. Use else to specify a block of code to be executed, if the same condition is false. Use else if to specify a new condition to test, if the first condition is false.
 export function formErrorStatus (){
-  console.log(errors.errorStatus)
   return errors.errorStatus
 }
