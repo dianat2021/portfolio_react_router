@@ -68,6 +68,21 @@
     border-color: #662d91;
     color: #662d91;
 }
+/* }-------------------------------------------------- */
+@media (min-width: 1920px){
+    .certificates-main-container{
+        width: 30rem;
+        height: 70rem;
+    }
+    .certificate-information p{
+        font-size: 1.7rem;
+    }
+    .certificates-links a{
+        width: 25rem;
+        height: 5rem;
+        font-size: 1.5rem;
+    }
+}
 /* --------------------------------------------------- */
 @media (max-width: 420px){
     .certificates-main-container{

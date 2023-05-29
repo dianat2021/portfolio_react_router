@@ -10,6 +10,7 @@ import ContactFormIcons from "./ContactFormIcons";
 
 const Navbar = () => {
   const menuElement = useRef();
+  const emailCopiedParagraph = useRef()
   const closeMenuHandler = (e) => {
     menuElement.current.style.right = "-1600px";
   };
@@ -25,21 +26,20 @@ const Navbar = () => {
     <Fragment>
       <nav>
         <span>
+          <p className={styles['email-copied-paragraph']} ref={emailCopiedParagraph}>Email copied to clipboard!</p>
           <div className={styles["contact-form-icons-container"]}>
-            <ContactFormIcons />
+            <ContactFormIcons emailCopiedParagraph={emailCopiedParagraph}/>
           </div>
         </span>
 
         <div className={styles["navlinks-main-container"]}>
           <ul className={styles["navlinks-container"]} ref={menuElement}>
-            {/* <li> */}
             <FaTimes
               color="#f58750"
               size={"4rem"}
               className={styles["hamburger-close-button"]}
               onClick={closeMenuHandler}
             />
-            {/* </li> */}
 
             <li>
               <NavLink

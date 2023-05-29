@@ -18,8 +18,7 @@ const CertificatesPage = () => {
         <section className={styles["certificates-title-container"]}>
           <h1>CERTIFICATES</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias eius
-            nisi rem illum velit obcaecati. Quas ea minus voluptas quae.
+           Following is a short list of the courses that I participated in and certifications that I have achieved.. 
           </p>
         </section>
 

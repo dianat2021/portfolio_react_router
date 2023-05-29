@@ -18,9 +18,8 @@ const HobbiesPage = () => {
         <section className={styles["hobbies-title-container"]}>
           <h1>HOBBIES</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-            doloribus numquam reprehenderit repudiandae ipsa itaque corrupti
-            unde repellat quidem asperiores.
+            Following is the list of activities that I usually do in my free
+            time.
           </p>
         </section>
 
@@ -34,7 +33,7 @@ const HobbiesPage = () => {
             />
           ))}
         </section>
-        <BackToTheTopButton/>
+        <BackToTheTopButton />
       </main>
     </Fragment>
   );

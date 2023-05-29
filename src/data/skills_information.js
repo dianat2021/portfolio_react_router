@@ -51,7 +51,7 @@ export const mySkills = [
     id: 4,
     title: "React",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.",
+      "React is one of the most popular front-end libiraries. I started learning React in the beginning of my Master's studies. In addition to what i learned from participating in universities' courses about React, I've been consistently trying to maintain and improve my skills by developing projects, watching tutorials, and reading articles.",
     logo: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ export const mySkills = [
     id: 5,
     title: "Redux",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.",
+      "After becoming proficient in working with React, I started to learn how to work with Redux, which is a powerful state management library and integrating it with my React applications to facilitate transfering and managing data in the apps. I started using Redux after i gained a proper level of knowledge in handling data using props and context API.",
     logo: (
       <svg
         viewBox="0 0 256 244"
@@ -86,7 +86,7 @@ export const mySkills = [
     id: 6,
     title: "PostgreSQL",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.",
+      "I learned about Microsoft SQL Server during my Bachelor's studies. After a few years being away from SQL, I started over again by learning PostgreSQL to refresh my knowledge and learn the new functionalities of this powerful database. ",
     logo: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export const mySkills = [
     id: 7,
     title: "TypeScript",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.",
+      "JavaScript is a dynamically typed language. Therefore, it is necessary to know how to use TypeScript to add static typing when working with JavaScript and React. Initially, I learned TypeScript by participating in online courses and integrating it in my projects.",
     logo: (
       <svg viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
         <path d="m0 0h640v640h-640z" fill="#017acb" />
@@ -142,7 +142,7 @@ export const mySkills = [
     id: 8,
     title: "Git",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.",
+      "Using Git which is a version control system is quite helpful in tracking files. But more importantly, it is impossible to work in a team as a software developer without having adequate knowledge in working with Git and Github. I have been using git for more than 4 years at work, for private projects, university projects, etc. ",
     logo: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +158,7 @@ export const mySkills = [
     id: 9,
     title: "Privacy by Design",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.",
+      "A thorough consideration of user privacy and security is a must in today's software development. It is wise to implement privacy and security in the development phases to prevent future problems. To accomplish this, it is required to have a detailed understanding of privacy-related regulations such as GDPR. I took part in a course called 'Privacy by Design' during my Master's studies where we had a detailed study of GDPR regulations.",
     logo: (
       <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -234,7 +234,7 @@ export const mySkills = [
     id: 10,
     title: "Agile Methodologies",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus numquam reprehenderit repudiandae ipsa itaque corrupti unde repellat quidem asperiores.",
+      "To develop enterprise applications and to be able to work in a team to reach a common goal, it is required to have sufficient understanding of project management models. Today, Agile methodologies are the most popular models in software development. The experience of working in development teams and participating in a course called 'Smart processes and agile methods in software engineering' during my Master's studies have made it possible to earn a proper knowledge in several popular Agile methodologies such as Scrum, Kanban, XP, and Lean development.",
     logo: (
       <svg
       xmlns="http://www.w3.org/2000/svg"

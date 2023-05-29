@@ -44,6 +44,15 @@
   align-items: center;
 }
 /* ----------------------------------------------------- */
+@media (min-width: 1920px){
+  .hobby-title{
+    font-size: 2rem;
+  }
+  .hobby-description p{
+    font-size: 1.7rem;
+  }
+}
+/* ----------------------------------------------------- */
 @media (max-width: 820px) {
   .hobby-component-container {
     width: 80%;

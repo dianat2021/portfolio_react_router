@@ -64,7 +64,26 @@ h1{
     background-position: center;
     transform: rotateZ(20deg);
 }
-/* ======================================================================= */
+/* ----------------------------------------------------------------------- */
+@media (min-width: 1920px){
+    .home-introduction-container{
+        justify-content: flex-start;
+        margin-top: 10rem;
+        gap: 3rem;
+    }
+    .home-introduction-container h1{
+        font-size: 4rem;
+    }
+    .home-introduction-container p{
+        font-size: 2rem;
+    }
+    .about-me-button{
+        width: 25rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+}
+/* ----------------------------------------------------------------------- */
 @media (max-width: 820px){
     .main-container{
         height: 100%;
@@ -97,6 +116,8 @@ h1{
         height: 70%;
     }
 }
+
+
 /* -------------------------------------------------------------------------------- */
 @media (max-width: 912px) and (max-height:1368px) and (orientation:portrait){
     .home-content-container{
@@ -113,6 +134,8 @@ h1{
         justify-content: center;
     }
   }
+
+
 
 /* ======================================================================= */
     @media (max-width: 820px) and (max-height: 680px){
@@ -207,5 +230,4 @@ h1{
         }
       }
 /* ======================================================================= */
-
 

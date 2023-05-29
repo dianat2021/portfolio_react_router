@@ -7,7 +7,7 @@
     padding-bottom: 1rem;
 } */
 .skills-title-container{
-    padding: 7rem 5rem 0 5rem;
+    padding: 10rem 5rem 0 5rem;
 }
 .skills-title-container h1{
     font-weight: bolder;
@@ -17,6 +17,18 @@
 
     font-size: 1.1rem;
     font-weight: bold;
+}
+/* ------------------------------------------------ */
+@media (min-width: 1920px){
+    .skills-title-container{
+        padding: 13rem 5rem 0 5rem;
+    }
+    .skills-title-container h1{
+        font-size: 4rem;
+    }
+    .skills-title-container p{
+        font-size: 2rem;
+    }
 }
 /* ------------------------------------------------ */
 @media (max-width: 820px){

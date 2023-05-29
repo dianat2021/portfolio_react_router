@@ -16,7 +16,7 @@ const MessageSentWindow = ({ messageSentWindow, setBackDropStatus }) => {
       >
         <div className={styles["message-sent-form"]}>
           <p>
-            Your message was successfully sent.{" "}
+            Your message was sent successfully.{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
