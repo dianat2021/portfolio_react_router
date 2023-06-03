@@ -22,7 +22,7 @@ const AboutPage = () => {
             Continuing my studies, I obtained my Bachelor's Degree in Computer Software Technology Engineering. During that time, I leaned more toward front-end engineering. I learned Javascript and improved my HTML and CSS knowledge, and it helped me to design, develop, and maintain several websites. I moved to Oslo, Norway, to study for a Master's in Programming and System Architecture at the University of Oslo. During my studies, I learned about React, Redux, privacy concepts such as GDPR, Agile methodologies, and design principles. I graduated in 2022 with a GPA of "A.”
             </p>
             <p className={styles["download-cv-container"]}>
-              <NavLink to="#" className={styles["download-cv-button"]}>
+              <NavLink to="https://drive.google.com/file/d/1-d7_HSGd-l7bsFeU-oFs7CwG7xqKhrhT/view?usp=drive_link" className={styles["download-cv-button"]} target="_blank">
                 Download CV
               </NavLink>
             </p>

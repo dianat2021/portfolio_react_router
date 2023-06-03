@@ -87,6 +87,8 @@ export const myCertificates = [
       version="1.1"
       viewBox="0 0 343.567 343.567"
       xmlSpace="preserve"
+      width="200"
+      height="200"
     >
       <path
         fill="#E8E8E8"

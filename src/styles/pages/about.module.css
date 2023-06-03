@@ -18,8 +18,8 @@
 }
 
 .about-biography-container p {
-  line-height: 1.5;
-  font-weight: bold;
+  line-height: 1.4;
+  font-weight:500;
 }
 .download-cv-container {
   display: flex;
